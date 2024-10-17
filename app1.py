@@ -6,8 +6,8 @@ from dash.dependencies import Input, Output
 import plotly.graph_objects as go
 
 #reading and processing data using pandas
-weather=pd.read_csv("C:\\Users\\Dell\\Music\\Downloads\\weather_data.csv")  
-demand=pd.read_csv("C:\\Users\\Dell\\Music\\Downloads\\electricity_demand.csv")
+weather=pd.read_csv("weather_data.csv")  
+demand=pd.read_csv("electricity_demand.csv")
 
 #initilaizing dashboard
 app = dash.Dash()
