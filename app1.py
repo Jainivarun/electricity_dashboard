@@ -61,6 +61,7 @@ def update_weather_graph(selected_weather):
 def update_weather_table(selected_weather):
     temp1= [html.Tr([html.Td(weather.iloc[i][col]) for col in weather.columns],style={'padding':'15px'}) for i in range(len(weather))]
     return temp1
+server=app.server
 if __name__ == '__main__':
-    app.run_server()
+    app.run_server(debug=True)
 
